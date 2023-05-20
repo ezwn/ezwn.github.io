@@ -1,0 +1,233 @@
+{
+    "questions": [
+        {
+            "type": "multiple_choice",
+            "question": "Quelle affirmation sur la matrice identité est correcte ?",
+            "options": [
+                {
+                    "choice": "La matrice identité est une matrice carrée dans laquelle tous les éléments sont égaux à 1.",
+                    "explanation": "Dans une matrice identité, seuls les éléments de la diagonale principale sont égaux à 1."
+                }, {
+                    "choice": "La matrice identité est une matrice dans laquelle tous les éléments de la diagonale principale sont égaux à 1 et tous les autres éléments sont égaux à 0.",
+                    "explanation": "C'est exact. C'est la définition d'une matrice identité."
+                }, {
+                    "choice": "La matrice identité est une matrice dans laquelle tous les éléments sont égaux à 0.",
+                    "explanation": "Dans une matrice identité, les éléments de la diagonale principale sont égaux à 1, pas 0."
+                }, {
+                    "choice": "La matrice identité est une matrice carrée dans laquelle tous les éléments de la diagonale principale sont égaux à 0 et tous les autres éléments sont égaux à 1.",
+                    "explanation": "C'est l'inverse."
+                }
+            ],
+            "answer": [
+                1
+            ]
+        },        
+        {
+            "type": "multiple_choice",
+            "question": "Soit la matrice A suivante : A = [[4, 7], [2, 3]]. Laquelle des affirmations suivantes est vraie concernant l'inversibilité de la matrice A ?",
+            "options": [
+                {
+                    "choice": "La matrice A est inversible parce qu'elle est carrée.",
+                    "explanation": "Bien que la matrice A soit carrée, cela ne suffit pas pour assurer son inversibilité. Le déterminant doit également être non nul."
+                },
+                {
+                    "choice": "La matrice A n'est pas inversible car elle a deux colonnes.",
+                    "explanation": "Le nombre de colonnes (ou de lignes, puisque nous parlons de matrices carrées) n'affecte pas directement l'inversibilité."
+                },
+                {
+                    "choice": "La matrice A est inversible car elle est carrée et son déterminant n'est pas zéro.",
+                    "explanation": "Exactement. Une matrice est inversible si et seulement si elle est carrée et son déterminant est non nul."
+                },
+                {
+                    "choice": "La matrice A n'est pas inversible car elle contient plus d'une ligne.",
+                    "explanation": "Le nombre de lignes (ou de colonnes, puisque nous parlons de matrices carrées) n'affecte pas directement l'inversibilité."
+                }
+            ],
+            "answer": [2]
+        },        
+        {
+            "type": "multiple_choice",
+            "question": "Quelle sont les conditions pour qu'une matrice soit inversible ?",
+            "options": [
+                {
+                    "choice": "Elle doit être carrée",
+                    "explanation": "Vrai. Mais ce n'est pas la seule condition."
+                },
+                {
+                    "choice": "Son déterminant doit être non-nul",
+                    "explanation": "Vrai. Une matrice carrée est inversible si et seulement si son déterminant est non-nul."
+                },
+                {
+                    "choice": "Elle doit avoir plus de colonnes que de lignes",
+                    "explanation": "Faux. Une matrice peut avoir plus de colonnes que de lignes et ne pas être inversible."
+                },
+                {
+                    "choice": "Elle doit avoir toutes ses entrées non-nulles",
+                    "explanation": "Faux. Une matrice peut avoir des entrées nulles et être inversible."
+                }
+            ],
+            "answer": [
+                0,
+                1
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "question": "Quelle affirmation est vraie concernant le déterminant d'une matrice carrée ?",
+            "options": [
+                {
+                    "choice": "Le déterminant d'une matrice carrée est toujours égal à zéro.",
+                    "explanation": "Faux. Le déterminant d'une matrice carrée n'est pas toujours zéro. Il peut être zéro, mais seulement dans le cas où la matrice est singulière, c'est-à-dire non inversible."
+                },
+                {
+                    "choice": "Le déterminant d'une matrice carrée est la somme de tous ses éléments.",
+                    "explanation": "Faux. Le déterminant d'une matrice carrée n'est pas simplement la somme de tous ses éléments. Il est plutôt un calcul plus complexe qui dépend de la taille de la matrice et de la relation entre ses éléments."
+                },
+                {
+                    "choice": "Si le déterminant d'une matrice carrée est zéro, alors la matrice n'est pas inversible.",
+                    "explanation": "Vrai. C'est une propriété fondamentale des matrices : une matrice carrée est inversible si et seulement si son déterminant est non nul."
+                },
+                {
+                    "choice": "Le déterminant d'une matrice carrée est égal au produit de sa diagonale principale.",
+                    "explanation": "Faux. Pour une matrice diagonale ou triangulaire, le déterminant est le produit des éléments de la diagonale principale. Cependant, cela n'est pas vrai pour toutes les matrices carrées. Le calcul du déterminant pour les matrices générales est plus complexe."
+                }
+            ],
+            "answer": [
+                2
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "question": "Qu'est ce que l'ordre (ou la taille) d'une matrice ?",
+            "options": [
+                {
+                    "choice": "Le nombre total d'éléments dans la matrice",
+                    "explanation": "Non. L'ordre ou la taille d'une matrice se réfère au nombre de lignes et de colonnes, pas au nombre total d'éléments."
+                },
+                {
+                    "choice": "Le nombre de lignes et de colonnes de la matrice",
+                    "explanation": "Oui. L'ordre ou la taille d'une matrice est le nombre de lignes et de colonnes qu'elle contient."
+                },
+                {
+                    "choice": "La somme des éléments de la matrice",
+                    "explanation": "Non. L'ordre ou la taille d'une matrice n'a rien à voir avec la somme de ses éléments."
+                },
+                {
+                    "choice": "La valeur du plus grand élément dans la matrice",
+                    "explanation": "Non. L'ordre ou la taille d'une matrice ne se réfère pas à la valeur de ses éléments."
+                }
+            ],
+            "answer": [
+                1
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "question": "Comment détermine-t-on le rang d'une matrice ?",
+            "options": [
+                {
+                    "choice": "Par le nombre de lignes ou colonnes linéairement indépendantes",
+                    "explanation": "Oui. Le rang d'une matrice est déterminé par le nombre de lignes ou colonnes linéairement indépendantes."
+                },
+                {
+                    "choice": "Par le nombre total d'éléments dans la matrice",
+                    "explanation": "Non."
+                },
+                {
+                    "choice": "Par le déterminant de la matrice",
+                    "explanation": "Non. Le rang d'une matrice n'est pas déterminé par son déterminant."
+                },
+                {
+                    "choice": "Par la taille de la plus grande matrice carrée inversible qu'on peut extraire",
+                    "explanation": "Oui. C'est une autre manière de définir le rang d'une matrice."
+                }
+            ],
+            "answer": [
+                0,
+                3
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "question": "Qu'est-ce qu'une matrice nulle ?",
+            "options": [
+                {
+                    "choice": "Une matrice dont tous les éléments sont nuls",
+                    "explanation": "Oui."
+                },
+                {
+                    "choice": "Une matrice qui n'a pas de rang",
+                    "explanation": "Non. Une matrice nulle a un rang de zéro, mais ce n'est pas ce qui la définit."
+                },
+                {
+                    "choice": "Une matrice qui ne peut pas être inversée",
+                    "explanation": "Non, bien que vrai, cela n'est pas spécifique aux matrices nulles. Il y a beaucoup de matrices qui ne peuvent pas être inversées."
+                },
+                {
+                    "choice": "Une matrice dont le déterminant est nul",
+                    "explanation": "Non, bien que le déterminant d'une matrice nulle soit effectivement nul, cela est également vrai pour d'autres matrices non nulles."
+                }
+            ],
+            "answer": [
+                0
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "question": "Qu'est-ce qu'une dépendance linéaire dans une matrice ?",
+            "options": [
+                {
+                    "choice": "C'est lorsque certaines les lignes ou colonnes sont des multiples d'une autre ligne ou colonne",
+                    "explanation": "Oui. C'est l'une des situations où il y a dépendance linéaire."
+                },
+                {
+                    "choice": "C'est lorsque le rang de la matrice est maximal",
+                    "explanation": "Non. Quand le rang est maximal, les lignes ou colonnes de la matrice sont linéairement indépendantes."
+                },
+                {
+                    "choice": "C'est lorsque la matrice est inversible",
+                    "explanation": "Non. Une matrice inversible a des lignes et des colonnes linéairement indépendantes."
+                },
+                {
+                    "choice": "C'est lorsque la matrice est carrée",
+                    "explanation": "Non. Une matrice carrée peut avoir ou non des dépendances linéaires."
+                }
+            ],
+            "answer": [
+                0
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "question": "Quelle est la meilleure définition d'une dépendance linéaire dans une matrice ?",
+            "options": [
+                {
+                    "choice": "Toutes les lignes ou colonnes sont des multiples d'autres lignes ou colonnes",
+                    "explanation": "Non. La dépendance peut concerner seulement certaines lignes ou colonnes."
+                },
+                {
+                    "choice": "Certaines lignes ou colonnes sont des multiples d'une autre ligne ou colonne",
+                    "explanation": "Non. La dépendance linéaire ne se limite pas aux cas où les lignes ou colonnes sont simplement des multiples les unes des autres."
+                },
+                "Certaines lignes ou colonnes sont une somme pondérée de multiples d'autres lignes ou colonnes"
+            ],
+            "answer": [
+                2
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "question": "Quel ensemble d'énoncés suivants décrivent correctement une situation où les lignes d'une matrice sont linéairement dépendantes?",
+            "options": [
+                "Au moins une ligne peut être obtenue en multipliant une autre ligne par un constant.",
+                "L'une des lignes peut être exprimée comme une combinaison linéaire des autres lignes.",
+                "Chaque ligne est orthogonale à toutes les autres lignes.",
+                "Chaque ligne est linéairement indépendante des autres lignes."
+            ],
+            "answer": [
+                0,
+                1
+            ]
+        }
+    ]
+}
